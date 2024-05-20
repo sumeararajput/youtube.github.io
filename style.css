@@ -11,7 +11,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
 }
 .fa-arrow-left{
     margin-left: 12px;
@@ -55,7 +57,7 @@
  position: fixed;
 }
 .box:hover{
-    background-color:;
+    /* background-color:; */
     cursor: pointer;
 }
 .fa-circle-info{
@@ -182,7 +184,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
+     top: 1%;
+    z-index: 2; 
 }
 .fa-bars{
      margin-left: 0px;
@@ -279,7 +283,7 @@
      border-radius: 360%;
      font-size: 15px;
      padding: 10px 10px;
-     margin-left: 90px;
+     margin-left: 80px;
      display: inline-block;
 }
 .fa-microphone:hover{
@@ -292,7 +296,7 @@
     border-radius: 360%;
     font-size: 15px;
     padding: 10px 10px;
-    margin-left: 200px;
+    margin-left: 70px;
     display: inline-block;
 }
 .fa-video:hover{
@@ -305,7 +309,7 @@
     border-radius: 360%;
     font-size: 15px;
     padding: 10px 10px;
-    margin-left: 30px;
+    margin-left: 5px;
     display: inline-block;
 }
 .fa-bell:hover{
@@ -318,7 +322,7 @@
     border-radius: 360%;
     font-size: 15px;
     padding: 10px 10px;
-    margin-left: 30px;
+    /* margin-left: 5px; */
     display: inline-block;
 }
 .fa-user:hover{
@@ -327,17 +331,20 @@
 .body-container{
     display: flex;
     position: fixed;
-    height: calc(100vh - 110px); 
+    height: calc(100vh - 90px); 
     top: 120px ;
     left: 1px;
 } 
  .sidebar{
     background-color: beige; 
     margin-top: 2px;
-    padding-top: 18px;
-    width: 290px;
+    padding-top: 15px;
+    width: 260px;
     overflow-y: scroll;
-    color: #fff; 
+    color: #fff;
+     /* /* display: flex; 
+     flex-direction: row;  
+    position: fixed;    */
 } 
 .sidebar a{
     text-decoration: none;
@@ -383,28 +390,129 @@
     color: red;
 } 
 .nav{
-    
-    padding: 25px;
-    padding-left: 20px;
-    background-color: rgba(0, 0, 0, 0.541);
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 122px;
+    right: 0;
+    height: 60px;
+    width: 82vw;
+    background-color: white;
+  
 }
 .navlist{
     list-style: none;
-     margin-left: 50px; 
+     margin-left: 50px;
+   
  }
  .navlinks{
     display: inline;
     font-size: 20px;
-     margin: 0px 30px; 
+     margin: 0px 40px; 
     padding: 2px;
+    border: 1px solid black;
+    border-radius: 5px; 
+    background-color: rgba(0, 255, 255, 0.089);
+ }
+ .btnalll{
+    padding: 6px 6px;
+    color: white;
+    background-color: black;
+    font-size: 13px;
  }
  a{
     text-decoration: none;
     color: black;
  }
- /* .navlinks:hover{
-    background-color:  rgba(0, 255, 34, 0.534);
- } */
-
-
+.navlinks:hover{
+    background-color: rgba(128, 128, 128, 0.37);
+ }
+ .center{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    position: absolute;
+    /* align-items: center;
+    justify-content: space-around; */
+    top: 70px;
+    left: 310px;
+    /* border: 1px solid black; */
+    height: 600px; 
+    width: 80vw;
+ }
+ .card{
+  margin-bottom: 500px;
+    /* border: 1px solid; */
+    border-radius: 15px;
+    height: 257px;
+    width: 305px;
+}
+.sec1{
+    /* border: 1px solid; */
+    height: 155px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+    background-image: url(https://images.pexels.com/photos/5845730/pexels-photo-5845730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sec2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+.sec2 img{
+    display: flex;
+    /* border: 1px solid; */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.sec2 h4{
+    color: black;
+    margin-left: 6px;
+}
+.sec2views h6{
+    font-size: 13px;
+    color:  rgba(0, 0, 0, 0.774);
+}
+.sec2views{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 48px;
+    font-size: 13px;
+}
+.sec2time{
+    display: flex;
+    margin-left: 48px;
+}
+#time{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.774);
+}
+#view{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.705);
+}
+.centercard1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid; */
+    margin-right: 15px;
+    margin-top: 1px;
+    /* height: 300px; */
+    /* width: 95vw; */
+}
