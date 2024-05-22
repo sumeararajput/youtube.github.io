@@ -159,7 +159,7 @@
        border-radius: 20px;
        padding: 8px 8px;
 }
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
    width: 8px;
 }
 ::-webkit-scrollbar-track{
@@ -174,7 +174,7 @@
 }
 ::-webkit-scrollbar-thumb:hover{
     background: #888;
-}
+} */
 .container3{
      /* width: 98.65vw;   */
     /* border: 1px solid  beige; */
@@ -335,13 +335,16 @@
     top: 120px ;
     left: 1px;
 } 
- .sidebar{
+.sidebar{
     background-color: beige; 
     margin-top: 2px;
     padding-top: 15px;
-    width: 260px;
+    width:15rem;
+    height: 34rem;
     overflow-y: scroll;
     color: #fff;
+    scrollbar-color: grey;
+    scrollbar-width: thin;
      /* /* display: flex; 
      flex-direction: row;  
     position: fixed;    */
@@ -383,6 +386,10 @@
     margin-left: 20px;
     font-weight: bold;
 }
+.fa-youtube{
+     font-size: 10px;
+    margin-left:1px;
+}
 .fa-icons{
     color: red;
 }
@@ -395,10 +402,10 @@
     align-items: center;
     justify-content: space-around;
     position: fixed;
-    top: 122px;
-    right: 0;
+    top: 130px;
+    right: 5px;
     height: 60px;
-    width: 82vw;
+    width: 80vw;
     background-color: white;
   
 }
