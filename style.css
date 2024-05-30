@@ -262,7 +262,11 @@
     width: 350px;
     border: 1px solid;
     border-radius: 5px;
+   
   }
+  .box:hover{
+    cursor: pointer;
+ }
   .sec1{
    
       height: 50%;
