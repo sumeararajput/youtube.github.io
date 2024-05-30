@@ -257,12 +257,14 @@
       justify-content: space-around;
   }
   .box{
+   
     height: 250px;
     width: 350px;
     border: 1px solid;
     border-radius: 5px;
   }
   .sec1{
+   
       height: 50%;
       background-image: url(https://images.pexels.com/photos/22863899/pexels-photo-22863899/free-photo-of-a-city-street-with-cars-and-buildings-on-both-sides.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
       background-repeat: no-repeat;
@@ -272,6 +274,7 @@
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
   }
+  
   .sec2{
     margin-top: 10px;
       margin-left: 5px;
