@@ -201,6 +201,8 @@
    .centerbar{
       padding: 20px 20px ;
       margin-left: 400px; 
+      position: fixed;
+      z-index: 999;
   }
   .nav{ 
       display: flex;
@@ -249,7 +251,7 @@
   .centercard{
       width: 1090px;
       height: 1200px;
-      margin-top: 70px;
+      margin-top: 120px;
       margin-left: 400px;
       display: flex;
       flex-direction: row;
@@ -268,7 +270,8 @@
     cursor: pointer;
  }
   .sec1{
-   
+    display: flex;
+    position: relative;
       height: 50%;
       background-image: url(https://images.pexels.com/photos/22863899/pexels-photo-22863899/free-photo-of-a-city-street-with-cars-and-buildings-on-both-sides.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
       background-repeat: no-repeat;
@@ -278,6 +281,13 @@
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
   }
+  .fa-volume-xmark{
+    position: relative;
+     top: 15px;
+     left: 300px;
+     font-size: 20px;
+     color: black;
+   }
   
   .sec2{
     margin-top: 10px;
